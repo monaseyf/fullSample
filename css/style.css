@@ -1,0 +1,112 @@
+
+#back{
+    background-image: url(photos/2536244.JPG);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.title {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    color:#9b9c9b;
+    
+   
+}
+ul#mymenu li{
+       list-style-type: none;
+       font-size: 25px;
+       color:#9b9c9b;
+       display:inline;
+       border-right: 3px solid #bce3fa;   
+       
+}
+#mymenu li:last-child{
+    border-right: 0px;
+}
+.aboutItem{
+    background-color:#23233b;
+    margin: 20px auto;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
+    color:#9b9c9b;
+}
+.aboutItem img{
+    max-width: 80px;
+    display: block;
+    margin: 5px auto 25px;
+}
+#second{
+    text-align: center;
+    background-color:#23233b ;
+    color:#9b9c9b; 
+}
+#second h3{
+    border-bottom: 3px solid palevioletred;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-top: 20px;
+}
+#Item{
+    margin: 10px 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+/* #pic1{
+border-radius: 50%;
+width: 300px;
+height: 300px;
+background-image: url("1.png");
+background-size: cover;
+} */
+.avatar{
+    /* vertical-align: middle; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    color: #23233b; 
+}
+
+#back3{
+    background-image: url('IMG_0040.jpg');
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+   text-align: center;
+   filter: blur(5px);
+}
+
+  
+
+#back2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.usual{
+    text-align:center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+#back4{
+   background-color:#23233b;
+   margin: 20px auto 0px;
+   width: 100%;
+   height: 400px;
+   text-align: center;
+   padding:20px auto;
+}
+#heading{
+    padding-top:20px;
+    color:#9b9c9b; 
+}
+#info{
+    color:#9b9c9b; 
+}

@@ -1,0 +1,62 @@
+
+<html>
+<head>
+   <style>
+     label{
+margin-left:50px
+     }
+     input{
+         margin-top: 10px;
+     }
+     #iran{
+         margin-top: 10px;
+     }
+     highlight{
+         background-color: brown;
+     }
+   </style>
+    <title>Document</title>
+    <script type=jquery-1.5.min.js></script>
+    <script>
+        $(document).ready(function(){
+        //   $('#submitbutton').click(function(){
+        //     alert('clicked button');
+        //   });
+          $(document).ready(function(){
+              var firstnameval=$('#firstnametextbox').val();
+              var lastnameval=$('lastnametextbox').val();
+              $('#divoutput').text(firstnameval+''+lastnameval) 
+          })
+        $('#mydiv')
+        .mouseenter(function(){
+            $(this).toggleClass('highlight');
+            $(this).css('cursor','pointer')
+        })
+
+        
+
+        })
+    </script>
+</head>
+<body>
+    <p id="mydiv">
+        This is some text
+    </p>
+    <form>
+<label>
+    First name
+</label>
+<input name="=firstname" id="firstnametextbox"/> <br/>
+<label>
+    Last name
+</label>
+<input name="lastname"/><br/>
+<label id="iran"> comments </label>
+<textarea> iran </textarea><br>
+
+<input id="submitbutton" value="submit" type="button"/>
+<div #divoutput>
+</div>
+    </form>
+</body>
+</html>
