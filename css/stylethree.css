@@ -178,10 +178,16 @@ h1{
       }
       .title h2{
         font-size: 3rem;
+        font-family: Poppins, sans-serif;
+        line-height: 1.618;
       }
       .text-dark {
-        color: #343a40!important;}
-
+        color: #343a40!important;
+        font-weight: 700;
+    }
+    .text-muted{
+        color: rgb(108, 117, 125) !important;
+    }
       .base-color {
         color: #1ab394 !important;
     }
@@ -258,8 +264,8 @@ h1{
    .progress{
        position: relative;
        width:30rem;
-       height: 1rem;
-       background-color: rgb(214, 210, 210);
+       height: 0.75rem;
+       background-color: #e1e1e1;
        border-radius: 1.5rem;
        
    }
@@ -267,10 +273,7 @@ h1{
        content: attr(data-label);
        display: flex;
        align-items: center;
-       position: absolute;
-       left: 0.25em;
-       top: 0.25em;
-       bottom:0.25em ;
+       position: relative;
        width: 2%;
        background-color: rgb(255, 83, 128);
        border-radius: 1.5rem;
@@ -278,14 +281,29 @@ h1{
    }
    .skill-box {
     margin-top: 30px;
-    padding: 30px 30px 30px;
+    padding: 30px 30px ;
 }
 .skill-box-one{
     margin-top: 30px;
+    padding: 30px 30px ;
 }
-#skills .row{
-padding: 15px 30px;
+#skills .row:not(:last-child){
+padding: 10px 0px;
 }
+.skill-box .progress{
+    margin-bottom:10px;
+}
+.skillbar-percent{
+   position: absolute;
+   font-weight: 500;
+   right: 20px;
+}
+.skillbar-title{
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 0.5rem;
+}
+/* Resume Ends */
 .list-inline-item {
     display: inline-block;
 }
@@ -333,9 +351,11 @@ padding: 0 30px 30px;
 }
 
 .owl-carousel .owl-dots .active span:hover {
-    background: #1ab394 ;
-    
+    background: #1ab394 ;   
 }
+/* .owl-item{
+ margin-left: 30px;
+} */
 button {
     outline: none !important;
 }
@@ -349,15 +369,18 @@ button {
 .list-inline-item:not(:last-child) {
     margin-right: 1rem;
 }
-
+.portfolio-item-content {
+    position: relative;
+    border-radius: 1.5rem;
+ }
 .img-overlay-content {
+    background-color: rgba(255, 66, 116, 0.8);
     position: absolute;
     top: 15px;
     bottom:15px;
     left: 15px;
     right:15px;
-    opacity: 0; 
-    /* overflow: hidden; */
+     opacity: 0;  
     border-radius: 1.25rem;
     transform: scale(0.8);
     transition: .5s all ease;
@@ -365,10 +388,10 @@ button {
     padding: 50px 30px;
 }
 
-.img-overlay-content:hover{
-    background-color: rgba(255, 66, 116, 0.8);
+ .img-overlay-content:hover{
     opacity: 1;
-  }
+    transform: scale(1)
+  } 
 
   .stuff {
     top: 50%;
@@ -376,9 +399,11 @@ button {
     transform: translate(-50%, -50%);
     left: 50%;
 }
- 
+.img-overlay-content h5{
+    font-family: "Poppins", sans-serif;
+    color: #fafafa;
+}
   .portfolio-icon button {
-  
     width: 35px;
     height: 35px;
     line-height: 37px;
@@ -386,25 +411,11 @@ button {
     display: inline-block; 
     border-radius: 4px;
     transition: all 0.3s ease;
-   
     border-color: transparent;
+    background-color:#1ab394;
+    color: white;
 }
-  .portfolio .portfolio-item-content::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    bottom: 15px;
-    left: 15px;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: .5s all ease;
-    border-radius: 1.25rem;
-}
-/* .portfolio .portfolio-item-content:hover::before {
-    transform: scale(1);
-    opacity: 1;
-} */
+
 #portfolio-single{
     display: none;
     position: fixed;
